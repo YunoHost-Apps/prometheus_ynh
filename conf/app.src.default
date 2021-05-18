@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v__VERSION__/prometheus-__VERSION__.linux-__ARCHITECTURE__.tar.gz
+SOURCE_SUM=__CHECKSUM__
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_EXTRACT=true
+SOURCE_FILENAME=prometheus.tar.gz

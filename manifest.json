@@ -1,0 +1,52 @@
+{
+    "name": "Prometheus",
+    "id": "prometheus",
+    "packaging_format": 1,
+    "description": {
+        "en": "Monitoring system and time series database",
+        "fr": "Supervision chronologique de systèmes et services"
+    },
+    "version": "2.27.1~ynh1",
+    "url": "https://prometheus.io",
+    "upstream": {
+        "license": "Apache-2.0",
+        "website": "https://prometheus.io",
+        "demo": "https://demo.do.prometheus.io",
+        "admindoc": "https://prometheus.io/docs",
+        "code": "https://github.com/prometheus/prometheus"
+    },
+    "license": "MIT",
+    "maintainer": {
+        "name": "tituspijean",
+        "email": "tituspijean@outlook.com"
+    },
+    "requirements": {
+        "yunohost": ">= 4.1.3"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "php7.3-fpm",
+        "mysql"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/prometheus",
+                "default": "/prometheus"
+            },
+            {
+                "name": "admin",
+                "type": "user",
+                "example": "johndoe"
+            }
+        ]
+    }
+}
