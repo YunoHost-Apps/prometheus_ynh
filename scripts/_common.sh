@@ -4,7 +4,7 @@
 # COMMON VARIABLES
 #=================================================
 
-version="2.27.1"
+version="2.28.0"
 architecture=""
 case $(uname -m) in
     i386)   architecture="386" ;;
