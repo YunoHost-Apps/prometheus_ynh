@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Monitoring system and time series database
 
-**Shipped version:** 2.28.0~ynh1
+**Shipped version:** 2.28.0~ynh2
 
 **Demo:** https://demo.do.prometheus.io
 
@@ -26,6 +26,10 @@ Monitoring system and time series database
 * Port assigned to the app can be read in `/etc/yunohost/apps/prometheus/settings.yml`
  or within CLI with `yunohost app info prometheus --full`
 * The app is configurable within the file `/opt/yunohost/prometheus/prometheus.yml`, then reboot the app service.
+* Permissions :
+  * `graph` enables access to Prometheus' graphical interface (address `/graph`) ;
+  * `api` protects the API (address `/api`, will not be shown on a tile in YunoHost's user interface) ;
+  * `main` protects all other *endpoints* (address `/`, will not be shown on a tile in YunoHost's user interface).
 
 ## Documentation and resources
 
