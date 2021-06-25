@@ -62,9 +62,17 @@ ynh_systemd_action --service_name=$app --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
-# Create a permission if needed
+# Hide non-browsable main / endpoint
+ynh_permission_update --permission="main" --show_tile="false"
+
+# Create a permission for browsable /graph endpoint, if needed
+if ! ynh_permission_exists --permission="graph"; then
+	ynh_permission_create --permission="graph" --url="/graph" --show_tile="true"
+fi
+
+# Create a permission for /api endpoint, if needed
 if ! ynh_permission_exists --permission="api"; then
-	ynh_permission_create --permission="api" --url="/api" --allowed="visitors" --show_tile="false" --protected="true"
+	ynh_permission_create --permission="api" --url="/api" --show_tile="false"
 fi
 
 #=================================================

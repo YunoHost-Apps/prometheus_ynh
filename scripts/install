@@ -144,9 +144,10 @@ ynh_systemd_action --service_name=$app --action="start" --log_path="systemd" --l
 #=================================================
 ynh_script_progression --message="Configuring permissions..." --weight=1
 
-ynh_permission_update --permission="main" --add="$admin" --remove="all_users"
+ynh_permission_update --permission="main" --add="$admin" --remove="all_users" --show_tile="false"
 
-ynh_permission_create --permission="api" --url="/api" --allowed="visitors" --show_tile="false" --protected="true"
+ynh_permission_create --permission="graph" --url="/graph" --allowed="$admin" --show_tile="true"
+ynh_permission_create --permission="api" --url="/api" --allowed="$admin" --show_tile="false"
 
 #=================================================
 # RELOAD NGINX
