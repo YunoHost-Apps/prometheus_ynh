@@ -94,6 +94,8 @@ then
 	ynh_add_nginx_config
 	# Create a dedicated service config
 	ynh_add_systemd_config
+else
+	path_url="$old_path"
 fi
 
 # Change the domain for NGINX
