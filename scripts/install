@@ -113,6 +113,7 @@ ynh_add_systemd_config
 ynh_script_progression --message="Configuring the app..." --weight=2
 
 ynh_replace_string --match_string="localhost:9090" --replace_string="localhost:$port" --target_file="$final_path/prometheus.yml"
+echo "    metrics_path: $path_url/metrics" >> "$final_path/prometheus.yml"
 
 #=================================================
 # GENERIC FINALIZATION
