@@ -6,7 +6,7 @@
         "en": "Monitoring system and time series database",
         "fr": "Supervision chronologique de systèmes et services"
     },
-    "version": "2.33.1~ynh1",
+    "version": "2.33.5~ynh1",
     "url": "https://prometheus.io",
     "upstream": {
         "license": "Apache-2.0",
@@ -21,7 +21,7 @@
         "email": "tituspijean@outlook.com"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 4.3"
     },
     "multi_instance": true,
     "services": [
@@ -33,8 +33,7 @@
         "install": [
             {
                 "name": "domain",
-                "type": "domain",
-                "example": "example.com"
+                "type": "domain"
             },
             {
                 "name": "path",
@@ -44,8 +43,7 @@
             },
             {
                 "name": "admin",
-                "type": "user",
-                "example": "johndoe"
+                "type": "user"
             }
         ]
     }
