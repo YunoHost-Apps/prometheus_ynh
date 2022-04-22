@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v2.33.5/prometheus-2.33.5.linux-armv6.tar.gz
-SOURCE_SUM=eb6c0a309de29805323b34a90e898689fbe15e4e4215e149cabe2d883f275740
+SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v2.35.0/prometheus-2.35.0.linux-armv6.tar.gz
+SOURCE_SUM=167cf474bb418156660a4c95bed9d1ce7833c3416089da49467a4dafabef4fc8
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
