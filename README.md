@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Monitoring system and time series database
 
-**Shipped version:** 2.36.0~ynh1
+**Shipped version:** 2.36.1~ynh1
 
 **Demo:** https://demo.do.prometheus.io
 ## Disclaimers / important information
