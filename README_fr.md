@@ -17,7 +17,8 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Supervision chronologique de systèmes et services
 
-**Version incluse :** 2.37.0~ynh1
+**Version incluse :** 2.38.0~ynh1
+
 
 **Démo :** https://demo.do.prometheus.io
 ## Avertissements / informations importantes
