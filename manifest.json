@@ -15,7 +15,7 @@
         "admindoc": "https://prometheus.io/docs",
         "code": "https://github.com/prometheus/prometheus"
     },
-    "license": "MIT",
+    "license": "Apache-2.0",
     "maintainer": {
         "name": "tituspijean",
         "email": "tituspijean@outlook.com"
