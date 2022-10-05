@@ -17,7 +17,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Supervision chronologique de systèmes et services
 
-**Version incluse :** 2.38.0~ynh1
+**Version incluse :** 2.39.0~ynh1 *(:warning: Il s'agit de la branche `ci-auto-update-v2.39.0`. La [branche `master`](https://github.com/YunoHost-Apps/prometheus_ynh/tree/master) utilisée dans le catalogue est actuellement en 2.38.0\~ynh1.)*
 
 
 **Démo :** https://demo.do.prometheus.io
