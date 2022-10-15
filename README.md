@@ -17,8 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Monitoring system and time series database
 
-**Shipped version:** 2.39.0~ynh1 *(:warning: This is the `ci-auto-update-v2.39.0` branch. The [`master` branch](https://github.com/YunoHost-Apps/prometheus_ynh/tree/master) used in the catalog is currently on version 2.38.0\~ynh1.)*
-
+**Shipped version:** 2.39.1~ynh1
 
 **Demo:** https://demo.do.prometheus.io
 ## Disclaimers / important information
