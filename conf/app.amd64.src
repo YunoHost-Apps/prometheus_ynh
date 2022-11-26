@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v2.39.1/prometheus-2.39.1.linux-amd64.tar.gz
-SOURCE_SUM=f3bdaa6f49b10af213a595e5d233579a1205a425fcebe2e23379e486f27a63c6
+SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v2.40.3/prometheus-2.40.3.linux-amd64.tar.gz
+SOURCE_SUM=4832e5ebe7a2976edcc90acf6bc4216e9c935aad4c2e5d3019a9b808522967ac
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
