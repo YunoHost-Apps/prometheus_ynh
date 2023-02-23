@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Prometheus for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/prometheus.svg)](https://dash.yunohost.org/appci/app/prometheus) ![Working status](https://ci-apps.yunohost.org/ci/badges/prometheus.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/prometheus.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/prometheus.svg)](https://dash.yunohost.org/appci/app/prometheus) ![Working status](https://ci-apps.yunohost.org/ci/badges/prometheus.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/prometheus.maintain.svg)
+
 [![Install Prometheus with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prometheus)
 
 *[Lire ce readme en français.](./README_fr.md)*
