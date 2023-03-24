@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v2.42.0/prometheus-2.42.0.linux-386.tar.gz
-SOURCE_SUM=f769c5d029b85125f99e9813d63ce942d23cbc41ebfae2743389bf813484e273
+SOURCE_URL=https://github.com/prometheus/prometheus/releases/download/v2.43.0%2Bstringlabels/prometheus-2.43.0%2Bstringlabels.linux-386.tar.gz
+SOURCE_SUM=67769e129526fc6e6d4b90e10f845443d4c0a7f2b11ef43364ceb0e78478231d
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
