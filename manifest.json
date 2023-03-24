@@ -6,7 +6,7 @@
         "en": "Monitoring system and time series database",
         "fr": "Supervision chronologique de systèmes et services"
     },
-    "version": "2.41.0~ynh1",
+    "version": "2.43.0~ynh1",
     "url": "https://prometheus.io",
     "upstream": {
         "license": "Apache-2.0",
