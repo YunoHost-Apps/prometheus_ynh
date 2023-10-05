@@ -18,7 +18,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 Supervision chronologique de systèmes et services
 
-**Version incluse :** 2.47.0~ynh1
+**Version incluse :** 2.47.1~ynh1
 
 **Démo :** https://demo.do.prometheus.io
 ## Avertissements / informations importantes
@@ -33,7 +33,6 @@ Supervision chronologique de systèmes et services
 * Site officiel de l’app : <https://prometheus.io>
 * Documentation officielle de l’admin : <https://prometheus.io/docs>
 * Dépôt de code officiel de l’app : <https://github.com/prometheus/prometheus>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_prometheus>
 * Signaler un bug : <https://github.com/YunoHost-Apps/prometheus_ynh/issues>
 
 ## Informations pour les développeurs

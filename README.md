@@ -18,7 +18,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Monitoring system and time series database
 
-**Shipped version:** 2.47.0~ynh1
+**Shipped version:** 2.47.1~ynh1
 
 **Demo:** https://demo.do.prometheus.io
 ## Disclaimers / important information
@@ -32,7 +32,6 @@ Monitoring system and time series database
 * Official app website: <https://prometheus.io>
 * Official admin documentation: <https://prometheus.io/docs>
 * Upstream app code repository: <https://github.com/prometheus/prometheus>
-* YunoHost documentation for this app: <https://yunohost.org/app_prometheus>
 * Report a bug: <https://github.com/YunoHost-Apps/prometheus_ynh/issues>
 
 ## Developer info
