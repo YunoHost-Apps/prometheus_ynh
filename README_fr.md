@@ -33,6 +33,7 @@ Supervision chronologique de systèmes et services
 * Site officiel de l’app : <https://prometheus.io>
 * Documentation officielle de l’admin : <https://prometheus.io/docs>
 * Dépôt de code officiel de l’app : <https://github.com/prometheus/prometheus>
+* YunoHost Store: <https://apps.yunohost.org/app/prometheus>
 * Signaler un bug : <https://github.com/YunoHost-Apps/prometheus_ynh/issues>
 
 ## Informations pour les développeurs

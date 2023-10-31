@@ -32,6 +32,7 @@ Monitoring system and time series database
 * Official app website: <https://prometheus.io>
 * Official admin documentation: <https://prometheus.io/docs>
 * Upstream app code repository: <https://github.com/prometheus/prometheus>
+* YunoHost Store: <https://apps.yunohost.org/app/prometheus>
 * Report a bug: <https://github.com/YunoHost-Apps/prometheus_ynh/issues>
 
 ## Developer info
