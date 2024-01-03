@@ -21,7 +21,7 @@ cpe = "cpe:2.3:a:prometheus:prometheus"
 
 [integration]
 yunohost = ">= 4.3"
-architectures = "all"
+architectures = ["i386", "amd64", "armhf", "arm64"]
 multi_instance = true
 ldap = false
 sso = false
