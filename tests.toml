@@ -11,3 +11,4 @@ test_format = 1.0
     [default.test_upgrade_from.6c4d396]
     name = "2021-06-23 v2.27.1"
     args.admin = "package_checker"
+    args.domain = "domain.tld"
