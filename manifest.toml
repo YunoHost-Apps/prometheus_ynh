@@ -1,0 +1,73 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "prometheus"
+name = "Prometheus"
+description.en = "Monitoring system and time series database"
+description.fr = "Supervision chronologique de systèmes et services"
+
+version = "2.48.0~ynh1"
+
+maintainers = ["tituspijean"]
+
+[upstream]
+license = "Apache-2.0"
+website = "https://prometheus.io"
+demo = "https://demo.do.prometheus.io"
+admindoc = "https://prometheus.io/docs"
+code = "https://github.com/prometheus/prometheus"
+cpe = "cpe:2.3:a:prometheus:prometheus"
+
+[integration]
+yunohost = ">= 4.3"
+architectures = ["i386", "amd64", "armhf", "arm64"]
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/prometheus"
+
+[resources]
+    [resources.sources]
+    [resources.sources.main]
+    i386.url = "https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-386.tar.gz"
+    i386.sha256 = "6b946c62137eefa8a272e0184c2cbe08a54136bebdcaa168e278aaed2c12a8ba"
+
+    amd64.url = "https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-amd64.tar.gz"
+    amd64.sha256 = "5871ca9e01ae35bb7ab7a129a845a7a80f0e1453f00f776ac564dd41ff4d754e"
+
+    armhf.url = "https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-armv7.tar.gz"
+    armhf.sha256 = "b4996550b56048a4b9a3937e0f5ff119c6fa33f937baf44007e5b9b4ce9779b1"
+
+    arm64.url = "https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-arm64.tar.gz"
+    arm64.sha256 = "c6e85f7b4fd0785df48266c1ee53975f862996a99b7d96520dc730e65da7bcf6"
+
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.i386 = ".*linux-386.tar.gz"
+    autoupdate.asset.amd64 = ".*linux-amd64.tar.gz"
+    autoupdate.asset.armhf = ".*linux-armv7.tar.gz"
+    autoupdate.asset.arm64 = ".*linux-arm64.tar.gz"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+    main.allowed = "admins"
+
+    api.url = "/api"
+    api.allowed = "visitors"
+
+    [resources.ports]
+    main.default = 9090
