@@ -16,18 +16,14 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Supervision chronologique de systèmes et services
+Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system.
+
+It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
+
 
 **Version incluse :** 2.48.1~ynh1
 
 **Démo :** https://demo.do.prometheus.io
-## Avertissements / informations importantes
-
-* Le port assigné à l'app est consultable dans `/etc/yunohost/apps/prometheus/settings.yml`
- ou avec la commande `yunohost app info prometheus --full`
-* L'app est configurable dans le fichier `/opt/yunohost/prometheus/prometheus.yml`,
- ensuite redémarrez le service de l'app.
-
 ## Documentations et ressources
 
 * Site officiel de l’app : <https://prometheus.io>

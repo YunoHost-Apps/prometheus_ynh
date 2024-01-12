@@ -16,17 +16,14 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Monitoring system and time series database
+Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system.
+
+It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
+
 
 **Shipped version:** 2.48.1~ynh1
 
 **Demo:** https://demo.do.prometheus.io
-## Disclaimers / important information
-
-* Port assigned to the app can be read in `/etc/yunohost/apps/prometheus/settings.yml`
- or within CLI with `yunohost app info prometheus --full`
-* The app is configurable within the file `/opt/yunohost/prometheus/prometheus.yml`, then reboot the app service.
-
 ## Documentation and resources
 
 * Official app website: <https://prometheus.io>
