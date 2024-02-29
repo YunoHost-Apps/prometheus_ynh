@@ -20,11 +20,14 @@ code = "https://github.com/prometheus/prometheus"
 cpe = "cpe:2.3:a:prometheus:prometheus"
 
 [integration]
-yunohost = ">= 4.3"
+yunohost = ">= 11.2"
 architectures = ["i386", "amd64", "armhf", "arm64"]
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
