@@ -20,17 +20,16 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 
 It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
+**Version incluse :** 2.51.0~ynh1
 
-**Version incluse :** 2.50.1~ynh1
-
-**Démo :** https://demo.do.prometheus.io
+**Démo :** <https://demo.do.prometheus.io>
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://prometheus.io>
-* Documentation officielle de l’admin : <https://prometheus.io/docs>
-* Dépôt de code officiel de l’app : <https://github.com/prometheus/prometheus>
-* YunoHost Store: <https://apps.yunohost.org/app/prometheus>
-* Signaler un bug : <https://github.com/YunoHost-Apps/prometheus_ynh/issues>
+- Site officiel de l’app : <https://prometheus.io>
+- Documentation officielle de l’admin : <https://prometheus.io/docs>
+- Dépôt de code officiel de l’app : <https://github.com/prometheus/prometheus>
+- YunoHost Store : <https://apps.yunohost.org/app/prometheus>
+- Signaler un bug : <https://github.com/YunoHost-Apps/prometheus_ynh/issues>
 
 ## Informations pour les développeurs
 
@@ -38,7 +37,7 @@ Merci de faire vos pull request sur la [branche testing](https://github.com/Yuno
 
 Pour essayer la branche testing, procédez comme suit.
 
-``` bash
+```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/prometheus_ynh/tree/testing --debug
 ou
 sudo yunohost app upgrade prometheus -u https://github.com/YunoHost-Apps/prometheus_ynh/tree/testing --debug
