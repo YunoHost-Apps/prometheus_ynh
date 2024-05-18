@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Prometheus
+# YunoHost 上的 Prometheus
 
 [![集成程度](https://dash.yunohost.org/integration/prometheus.svg)](https://dash.yunohost.org/appci/app/prometheus) ![工作状态](https://ci-apps.yunohost.org/ci/badges/prometheus.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/prometheus.maintain.svg)
 
@@ -21,7 +21,7 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
 
-**分发版本：** 2.48.0~ynh2
+**分发版本：** 2.52.0~ynh1
 
 **演示：** <https://demo.do.prometheus.io>
 ## 文档与资源
