@@ -20,7 +20,8 @@ code = "https://github.com/prometheus/prometheus"
 cpe = "cpe:2.3:a:prometheus:prometheus"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.18"
+helpers_version = "2.1"
 architectures = ["i386", "amd64", "armhf", "arm64"]
 multi_instance = true
 
