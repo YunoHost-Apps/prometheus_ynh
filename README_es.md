@@ -21,7 +21,7 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
 
-**Versión actual:** 2.54.1~ynh1
+**Versión actual:** 2.55.0~ynh1
 
 **Demo:** <https://demo.do.prometheus.io>
 ## Documentaciones y recursos
@@ -34,7 +34,7 @@ It collects metrics from configured targets at given intervals, evaluates rule e
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/prometheus_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/prometheus_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
