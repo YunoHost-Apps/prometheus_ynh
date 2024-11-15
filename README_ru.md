@@ -21,7 +21,7 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
 
-**Поставляемая версия:** 3.0.0~ynh1
+**Поставляемая версия:** 3.0.0~ynh2
 
 **Демо-версия:** <https://demo.do.prometheus.io>
 ## Документация и ресурсы
