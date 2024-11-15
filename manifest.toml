@@ -7,7 +7,7 @@ name = "Prometheus"
 description.en = "Monitoring system and time series database"
 description.fr = "Supervision chronologique de systèmes et services"
 
-version = "3.0.0~ynh1"
+version = "3.0.0~ynh2"
 
 maintainers = ["tituspijean"]
 
@@ -20,7 +20,7 @@ code = "https://github.com/prometheus/prometheus"
 cpe = "cpe:2.3:a:prometheus:prometheus"
 
 [integration]
-yunohost = ">= 11.2.18"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = ["i386", "amd64", "armhf", "arm64"]
 multi_instance = true

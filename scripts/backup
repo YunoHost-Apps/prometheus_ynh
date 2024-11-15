@@ -1,15 +1,9 @@
 #!/bin/bash
 
-# Keep this path for calling _common.sh inside the execution's context of backup and restore scripts
 source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 
 ynh_print_info "Declaring files to be backed up..."
-
-### N.B. : the following 'ynh_backup' calls are only a *declaration* of what needs
-### to be backuped and not an actual copy of any file. The actual backup that
-### creates and fill the archive with the files happens in the core after this
-### script is called. Hence ynh_backups calls takes basically 0 seconds to run.
 
 #=================================================
 # BACKUP THE APP MAIN DIR
@@ -23,17 +17,7 @@ ynh_backup "$install_dir"
 
 ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
 
-#=================================================
-# SPECIFIC BACKUP
-#=================================================
-# BACKUP LOGROTATE
-#=================================================
-
 ynh_backup "/etc/logrotate.d/$app"
-
-#=================================================
-# BACKUP SYSTEMD
-#=================================================
 
 ynh_backup "/etc/systemd/system/$app.service"
 
