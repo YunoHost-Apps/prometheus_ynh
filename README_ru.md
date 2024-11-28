@@ -5,7 +5,9 @@
 
 # Prometheus для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/prometheus.svg)](https://ci-apps.yunohost.org/ci/apps/prometheus/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/prometheus.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/prometheus.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/prometheus)](https://ci-apps.yunohost.org/ci/apps/prometheus/)
+![Состояние работы](https://apps.yunohost.org/badge/state/prometheus)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/prometheus)
 
 [![Установите Prometheus с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prometheus)
 
@@ -21,7 +23,7 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
 
-**Поставляемая версия:** 3.0.0~ynh2
+**Поставляемая версия:** 3.0.1~ynh1
 
 **Демо-версия:** <https://demo.do.prometheus.io>
 ## Документация и ресурсы
