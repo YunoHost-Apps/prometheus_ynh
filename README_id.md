@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Prometheus untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/prometheus.svg)](https://ci-apps.yunohost.org/ci/apps/prometheus/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/prometheus.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/prometheus.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/prometheus)](https://ci-apps.yunohost.org/ci/apps/prometheus/)
+![Status kerja](https://apps.yunohost.org/badge/state/prometheus)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/prometheus)
 
 [![Pasang Prometheus dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prometheus)
 
@@ -21,7 +23,7 @@ Prometheus, a Cloud Native Computing Foundation project, is a systems and servic
 It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 
 
-**Versi terkirim:** 3.0.0~ynh1
+**Versi terkirim:** 3.0.1~ynh1
 
 **Demo:** <https://demo.do.prometheus.io>
 ## Dokumentasi dan sumber daya
