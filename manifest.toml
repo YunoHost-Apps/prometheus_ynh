@@ -7,7 +7,7 @@ name = "Prometheus"
 description.en = "Monitoring system and time series database"
 description.fr = "Supervision chronologique de systèmes et services"
 
-version = "3.8.0~ynh1"
+version = "3.8.1~ynh1"
 
 maintainers = ["tituspijean"]
 
@@ -43,17 +43,17 @@ ram.runtime = "50M"
 [resources]
     [resources.sources]
     [resources.sources.main]
-    i386.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.0/prometheus-3.8.0.linux-386.tar.gz"
-    i386.sha256 = "4ba6a23ee2bde4adfc0459b39ee40ebc1f6ef69885788e0c56d163fbfbd2712c"
+    i386.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.1/prometheus-3.8.1.linux-386.tar.gz"
+    i386.sha256 = "62cff6e12435c0b114a285a0c242bd799127520f997a8ab78dd4c73b9c597ac5"
 
-    amd64.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.0/prometheus-3.8.0.linux-amd64.tar.gz"
-    amd64.sha256 = "6f451d0331ceb4ae16aefbb2b28762142251fddd7caadd414d030ff55130b25b"
+    amd64.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.1/prometheus-3.8.1.linux-amd64.tar.gz"
+    amd64.sha256 = "a09972ced892cd298e353eb9559f1a90f499da3fb4ff0845be352fc138780ee7"
 
-    armhf.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.0/prometheus-3.8.0.linux-armv7.tar.gz"
-    armhf.sha256 = "deceadc16d16814e5b9d677985d6eae5c4865c9ba01adcb02b4b371d0626d532"
+    armhf.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.1/prometheus-3.8.1.linux-armv7.tar.gz"
+    armhf.sha256 = "70159946928dce8e11a5d38b6f478b5b6b65533e67c7909644cf613eb59cdf5c"
 
-    arm64.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.0/prometheus-3.8.0.linux-arm64.tar.gz"
-    arm64.sha256 = "750b1b70d32dd7bfd5d2da9656e7a8e719658c0b6307aa1759aab4b1bd254498"
+    arm64.url = "https://github.com/prometheus/prometheus/releases/download/v3.8.1/prometheus-3.8.1.linux-arm64.tar.gz"
+    arm64.sha256 = "8d95804e692bba65a48d32ecdfb3d4acd8e1560d440c8cc08f48167cb838ec4b"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.i386 = ".*linux-386.tar.gz"
