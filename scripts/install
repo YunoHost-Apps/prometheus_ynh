@@ -24,7 +24,7 @@ ynh_script_progression "Configuring the app..."
 ynh_replace --match="localhost:9090" --replace="localhost:$port" --file="$install_dir/prometheus.yml"
 echo "    metrics_path: $path/metrics" >> "$install_dir/prometheus.yml"
 
-ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
+#ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
 
 #=================================================
 # SYSTEM CONFIGURATION
