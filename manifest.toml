@@ -40,6 +40,16 @@ ram.runtime = "50M"
     type = "path"
     default = "/prometheus"
 
+    [install.init_main_permission]
+    type = "group"
+    default = "admins"
+
+    [install.init_api_permission]
+    type = "group"
+    default = "admins"
+    help.en = "Choose which group can access the API. If you select `visitors` without further action, the API and metrics will be completely open. This is not recommended, read the app's configuration page after installation to set up credentials."
+    help.fr = "Choisissez quel groupe peut accéder à l'API. Si vous sélectionnez `visiteurs` sans d'autre action, alors l'API et les métriques seront complètement ouvertes. Cela n'est pas recommandé, consultez la page de configuration de l'app après installation pour mettre en place des authentifiants."
+
 [resources]
     [resources.sources]
     [resources.sources.main]
@@ -67,11 +77,9 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
-    main.allowed = "admins"
 
     api.url = "/api"
     api.show_tile = false
-    api.allowed = "visitors"
 
     [resources.ports]
     main.default = 9090

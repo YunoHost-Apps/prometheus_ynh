@@ -14,6 +14,12 @@ ynh_systemctl --service=$app --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Ensuring downward compatibility..."
 
+if ynh_app_upgrading_from_version_before 3.13.1~ynh1; then
+    ynh_permission_has_user --permission=api --user=visitors && ynh_permission_update --permission "api" --remove="visitors"
+    ynh_print_warn "Visitors permission to the API has been revoked, cf. pre-upgrade message and app's documentation."
+fi
+
+[ ! -f "$install_dir/web.yml" ] && ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
