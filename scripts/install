@@ -2,6 +2,12 @@
 
 source /usr/share/yunohost/helpers
 
+password=$(ynh_string_random --length=32)
+ynh_app_setting_set --key=password --value=$password
+
+hash=$(printf '%s' "$password" | python3 -c 'import sys, bcrypt; print(bcrypt.hashpw(sys.stdin.buffer.read(), bcrypt.gensalt()).decode())')
+ynh_app_setting_set --key=hash --value=$hash
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
@@ -24,7 +30,7 @@ ynh_script_progression "Configuring the app..."
 ynh_replace --match="localhost:9090" --replace="localhost:$port" --file="$install_dir/prometheus.yml"
 echo "    metrics_path: $path/metrics" >> "$install_dir/prometheus.yml"
 
-#ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
+ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
 
 #=================================================
 # SYSTEM CONFIGURATION
