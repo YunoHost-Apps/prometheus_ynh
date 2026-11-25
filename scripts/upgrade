@@ -23,6 +23,8 @@ if ynh_app_upgrading_from_version_before 3.13.1~ynh1; then
     hash=$(printf '%s' "$password" | python3 -c 'import sys, bcrypt; print(bcrypt.hashpw(sys.stdin.buffer.read(), bcrypt.gensalt()).decode())')
     ynh_app_setting_set --key=hash --value=$hash
 
+    admin="admin"
+
     ynh_print_warn "Visitors permission to the API has been revoked, cf. pre-upgrade message and app's documentation. A new password has been generated, check admin docs for it"
 else
     hash=$(ynh_app_setting_get --app=$app --key=hash)
