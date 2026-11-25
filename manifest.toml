@@ -83,3 +83,6 @@ ram.runtime = "50M"
 
     [resources.ports]
     main.default = 9090
+    
+    [resources.apt]
+    packages = "python3-bcrypt"
