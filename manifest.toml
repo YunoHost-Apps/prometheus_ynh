@@ -86,6 +86,7 @@ ram.runtime = "50M"
 
     api.url = "/api"
     api.show_tile = false
+    api.auth_header = false
 
     [resources.ports]
     main.default = 9090
