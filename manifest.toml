@@ -50,6 +50,12 @@ ram.runtime = "50M"
     help.en = "Choose which group can access the API. If you select `visitors` without further action, the API and metrics will be completely open. This is not recommended, read the app's configuration page after installation to set up credentials."
     help.fr = "Choisissez quel groupe peut accéder à l'API. Si vous sélectionnez `visiteurs` sans d'autre action, alors l'API et les métriques seront complètement ouvertes. Cela n'est pas recommandé, consultez la page de configuration de l'app après installation pour mettre en place des authentifiants."
 
+    [install.admin]
+    type = "user"
+
+    [install.password]
+    type = "password"
+
 [resources]
     [resources.sources]
     [resources.sources.main]
