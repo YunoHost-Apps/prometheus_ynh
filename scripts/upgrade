@@ -16,10 +16,20 @@ ynh_script_progression "Ensuring downward compatibility..."
 
 if ynh_app_upgrading_from_version_before 3.13.1~ynh1; then
     ynh_permission_has_user --permission=api --user=visitors && ynh_permission_update --permission "api" --remove="visitors"
-    ynh_print_warn "Visitors permission to the API has been revoked, cf. pre-upgrade message and app's documentation."
+
+    password=$(ynh_string_random --length=32)
+    ynh_app_setting_set --key=password --value=$password
+    
+    hash=$(printf '%s' "$password" | python3 -c 'import sys, bcrypt; print(bcrypt.hashpw(sys.stdin.buffer.read(), bcrypt.gensalt()).decode())')
+    ynh_app_setting_set --key=hash --value=$hash
+
+    ynh_print_warn "Visitors permission to the API has been revoked, cf. pre-upgrade message and app's documentation. A new password has been generated, check admin docs for it"
+else
+    hash=$(ynh_app_setting_get --app=$app --key=hash)
 fi
 
-[ ! -f "$install_dir/web.yml" ] && ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
+ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
