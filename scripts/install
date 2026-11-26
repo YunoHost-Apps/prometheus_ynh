@@ -6,6 +6,7 @@ ynh_app_setting_set --key=password --value=$password
 
 hash=$(printf '%s' "$password" | python3 -c 'import sys, bcrypt; print(bcrypt.hashpw(sys.stdin.buffer.read(), bcrypt.gensalt()).decode())')
 ynh_app_setting_set --key=hash --value=$hash
+ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -50,6 +51,7 @@ ynh_config_add_logrotate
 ynh_script_progression "Starting $app's systemd service..."
 
 ynh_systemctl --service=$app --action="start" --log_path="systemd" --wait_until="Started $app" --timeout=30
+yunohost app ssowatconf
 
 #=================================================
 # END OF SCRIPT
