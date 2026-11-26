@@ -8,6 +8,7 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Stopping $app's systemd service..."
 
 ynh_systemctl --service=$app --action="stop" --log_path="systemd"
+ynh_app_setting_set_default --key=protect_against_basic_auth_spoofing --value=false
 
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
@@ -59,6 +60,7 @@ ynh_config_add_logrotate "$install_dir/.data/logs"
 ynh_script_progression "Starting $app's systemd service..."
 
 ynh_systemctl --service=$app --action="start" --log_path="systemd" --wait_until="Started $app" --timeout=30
+yunohost app ssowatconf
 
 #=================================================
 # END OF SCRIPT
