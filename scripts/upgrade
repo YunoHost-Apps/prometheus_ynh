@@ -51,6 +51,8 @@ ynh_config_add_systemd
 
 yunohost service add $app --description="Prometheus daemon" --log="systemd"
 
+yunohost app ssowatconf
+
 ynh_config_add_logrotate
 ynh_config_add_logrotate "$install_dir/.data/logs"
 
@@ -60,7 +62,6 @@ ynh_config_add_logrotate "$install_dir/.data/logs"
 ynh_script_progression "Starting $app's systemd service..."
 
 ynh_systemctl --service=$app --action="start" --log_path="systemd" --wait_until="Started $app" --timeout=30
-yunohost app ssowatconf
 
 #=================================================
 # END OF SCRIPT
