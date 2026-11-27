@@ -8,11 +8,30 @@ source /usr/share/yunohost/helpers
 ynh_script_progression "Stopping $app's systemd service..."
 
 ynh_systemctl --service=$app --action="stop" --log_path="systemd"
+ynh_app_setting_set_default --key=protect_against_basic_auth_spoofing --value=false
 
 #=================================================
 # ENSURE DOWNWARD COMPATIBILITY
 #=================================================
 ynh_script_progression "Ensuring downward compatibility..."
+
+if ynh_app_upgrading_from_version_before 3.13.1~ynh1; then
+    ynh_permission_has_user --permission=api --user=visitors && ynh_permission_update --permission "api" --remove="visitors"
+
+    password=$(ynh_string_random --length=32)
+    ynh_app_setting_set --key=password --value=$password
+    
+    hash=$(printf '%s' "$password" | python3 -c 'import sys, bcrypt; print(bcrypt.hashpw(sys.stdin.buffer.read(), bcrypt.gensalt()).decode())')
+    ynh_app_setting_set --key=hash --value=$hash
+
+    admin="admin"
+
+    ynh_print_warn "Visitors permission to the API has been revoked, cf. pre-upgrade message and app's documentation. A new password has been generated, check admin docs for it"
+else
+    hash=$(ynh_app_setting_get --app=$app --key=hash)
+fi
+
+ynh_config_add --template="web.yml" --destination="$install_dir/web.yml"
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -31,6 +50,8 @@ ynh_config_add_nginx
 ynh_config_add_systemd
 
 yunohost service add $app --description="Prometheus daemon" --log="systemd"
+
+yunohost app ssowatconf
 
 ynh_config_add_logrotate
 ynh_config_add_logrotate "$install_dir/.data/logs"
