@@ -6,7 +6,7 @@ test_format = 1.0
 [default.curl_tests]
 
     healthcheck.path = "/-/healthy"
-    expect_return_code = 401
+    healthcheck.expect_return_code = 401
     
     # ------------
     # Tests to run
